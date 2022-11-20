@@ -6,6 +6,7 @@
 
 import constants
 
+
 def main():
     # This program calculates multiplication tables for user input
     counter = 0
@@ -23,11 +24,7 @@ def main():
             while counter < constants.TABLE_END:
                 counter = counter + 1
                 product = input_as_int * counter
-                print(
-                    "\n{0} x {1} = {2}.".format(
-                        input_as_string, counter, product
-                    )
-                )
+                print("\n{0} x {1} = {2}.".format(input_as_string, counter, product))
 
     except Exception:
         print("\nInvalid input.")
